@@ -1,0 +1,11 @@
+npm init -y
+npm i express nodemon dotenv
+* modify package.json:
+    - adding "type": "module",
+    - create script dev with nodemon
+* create a src folder with app.js and server.js inside it
+* in app, import express
+* in server, import app
+* inside src, create routes, controllers and models
+* create a .env file and a .gitignore
+
