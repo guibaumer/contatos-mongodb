@@ -19,7 +19,7 @@ class App {
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(express.json());
         this.app.use((req, res, next) => {
-            res.setHeader('Access-Control-Allow-Origin', ['http://localhost:3000']); 
+            res.setHeader('Access-Control-Allow-Origin', ['https://lista-de-contatos-next.netlify.app']); 
             res.setHeader('Access-Control-Allow-Headers', 'content-type');
             res.setHeader('Access-Control-Allow-Credentials', 'true');
             res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
