@@ -53,7 +53,6 @@ export const deleteUser = async (req, res) => {
 
   const deletedUser = await deleteTheUser(userId);
 
-
   if (deleteTheUser) {
     if (req.session && req.session.user) await req.session.destroy();
     console.log(deleteTheUser);
