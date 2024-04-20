@@ -15,7 +15,7 @@ class App {
     }
 
     middlewares() {
-        // this.app.enable('trust proxy'),
+        this.app.enable('trust proxy'),
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(express.json());
         this.app.use((req, res, next) => {
